@@ -132,13 +132,12 @@
 
 <script>
   // Responses land in a Google Form (and its linked Google Sheet).
-  // FORM NOT CONNECTED YET — PLACEHOLDER. Fill these in from the form's pre-filled link.
-  // While FORM_ID is empty, submit sends nothing and only shows the thank-you state.
-  // The "What's not working?" question in the form must list the five options above, letter for letter.
-  var FORM_ID = '';
-  var ENTRY_REASON = '';
-  var ENTRY_DETAILS = '';
-  var ENTRY_EMAIL = '';
+  // Form connected 2026-10-07; entry IDs read from the form itself.
+  // The "What's not working?" question in the form lists the five options above, letter for letter.
+  var FORM_ID = '1FAIpQLSd-QWEblwPSJYs8rqgRbdyk7g1EmLtDO46wxdx2aF6pa71f0w';
+  var ENTRY_REASON = 'entry.1249526469';   // What's not working? (multiple choice)
+  var ENTRY_DETAILS = 'entry.1536688108';  // Tell us more (paragraph)
+  var ENTRY_EMAIL = 'entry.2001398662';    // Email, if you'd like a reply (short answer)
 
   document.getElementById('feedback').addEventListener('submit', function (e) {
     e.preventDefault();
